@@ -13,8 +13,8 @@ router.get("/", async (req, res) => {
     });
     res.send(response.data);
   } catch (error) {
-    // let errorCode = error.response.data.cod;
-    // res.status(parseInt(errorCode)).json(error.response.data);
+    let errorCode = error.response.data.cod;
+    res.status(parseInt(errorCode)).json(error.response.data);
   }
 });
 
