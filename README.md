@@ -1,4 +1,4 @@
-# How to Use
+# Getting Started
 
 ## Get your API key
 
