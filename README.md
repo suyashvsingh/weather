@@ -33,7 +33,7 @@ REACT_APP_WEATHER_API_KEY=[Your API key here]
 
 ## Running the React App (Production Mode)
 
-* In the root folder, run ``` npm start ``` command.
+* In the root folder, run ``` npm run build && npm run start ``` command.
 * The app will start running at http://localhost:5000
 
 ## Live Demo
