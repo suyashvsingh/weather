@@ -52,7 +52,7 @@ form {
 }
 
 .submit:active {
-  background-color: rgb(1, 27, 1);
+  background-color: rgb(2, 84, 2);
 }
 
 .display {
@@ -111,4 +111,12 @@ form {
   .submit {
     margin: 0em 1em;
   }
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
