@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  background-color: #3e5262;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background-color: #060d11;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1em;
+}
+
+form {
+  margin: 1em 0em;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputBox {
+  padding: 1em;
+  border: 0px;
+  border-radius: 0.3em;
+  font-size: 0.9em;
+  font-family: poppins;
+}
+
+.submit {
+  background-color: green;
+  color: white;
+  font-family: poppins;
+  padding: 1em;
+  border: 0px;
+  border-radius: 0.3em;
+  font-size: 0.9em;
+  margin: 1em 1em;
+  cursor: pointer;
+}
+
+.submit:active {
+  background-color: rgb(1, 27, 1);
+}
+
+.display {
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display--card {
+  background-color: #ffffff;
+  border-radius: 1em;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 0em;
+  box-shadow: 1em 1em 1em;
+  text-align: center;
+  width: 90vw;
+  height: 30vh;
+}
+
+.curr--temperature {
+  font-weight: 500;
+  font-size: 3em;
+}
+
+.curr--description {
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.curr--city {
+  margin: 1em 0em 0em 0em;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 770px) {
+  .display--card {
+    width: 50vw;
+  }
+
+  .header {
+    flex-direction: row;
+    padding: 0em 1em;
+  }
+
+  .inputArea {
+    flex-direction: row;
+  }
+
+  .submit {
+    margin: 0em 1em;
+  }
+}
