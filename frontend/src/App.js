@@ -50,7 +50,31 @@ function App() {
 
   // firstTimeLoad;
   useEffect(() => {
-    fetchData("new delhi");
+    //fetch current location weather
+    try {
+      navigator.geolocation.getCurrentPosition(async (position) => {
+        let response = await axios("/api/latlong", {
+          params: {
+            lat: position.coords.latitude,
+            lon: position.coords.longitude,
+          },
+        });
+        let data = await response.data;
+        setData({
+          city: data.name,
+          temperature: `${data.main.temp} ℃`,
+          description: data.weather[0].main,
+          country: data.sys.country,
+        });
+      });
+    } catch (error) {
+      setData({
+        city: "No such city",
+        temperature: ``,
+        description: "",
+        country: "",
+      });
+    }
     // eslint-disable-next-line
   }, []);
 
